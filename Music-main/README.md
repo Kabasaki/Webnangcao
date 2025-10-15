@@ -172,27 +172,7 @@ Sau khi nhập các trường thông tin hợp lệ và bấm lưu sẽ được
  	-Thời lượng của bài hát 
  	-Thêm five URL bài hát
  
-### 2.7 Giao diện người dùng sau khi được update bài hát mới 
 
-  	Sau khi update bài hát mới giao diện người dùng sẽ tự động được cập nhật thông tin của bài hát mới và hiển thị lên giao diện người dùng
- 
-Và đây là chi tiết của bài hát khi ở giao diện người dùng:
-
- 
-### 2.8 Giao dien
-
-![Image](https://github.com/user-attachments/assets/54d1834e-0baa-4a5c-a48e-b978deadd0b1)
-
-![Image](https://github.com/user-attachments/assets/d2000d15-a7cc-4544-89fc-28d704f61d0f)
-
-![Image](https://github.com/user-attachments/assets/6bd1c1ec-3afa-43fa-9b76-75cef0632017)
-
-![Image](https://github.com/user-attachments/assets/dd430856-8f1b-45ed-9b93-01218d5e4351)
-
-![Image](https://github.com/user-attachments/assets/ac686b15-64c4-4434-b9a8-d8a28974a5fc)
-
-## 2.9. Link video demo
-https://drive.google.com/file/d/1pyaSX6rnSr_AZkPpzfAf9LSDMSOx1cRz/view?usp=sharing
 
 # PHẦN III: SƠ ĐỒ THỰC HIỆN
 ## 1.Sơ đồ chức năng
