@@ -4,8 +4,8 @@
 # Hệ Thống Quản Lý Bài Hát, Nghệ Sĩ
 
 ## Được Phát Triển Bởi:
-Phạm Ngọc Luân
-Đỗ Thành Đạt
+- Phạm Ngọc Luân
+- Đỗ Thành Đạt
 
 ## Mô Tả Ứng Dụng
 Hệ thống quản lý nhạc là một ứng dụng web giúp quản lý người dùng, nghệ sĩ, bài hát, thể loại, danh sách phát một cách hiệu quả. Ứng dụng cung cấp các chức năng CRUD, tìm kiếm, sắp xếp cho các đối tượng.
