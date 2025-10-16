@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 # MusicManager
 
 # Hệ Thống Quản Lý Bài Hát, Nghệ Sĩ
@@ -218,5 +218,3 @@ Các chức năng hoạt động ổn định
 ## 2.Đánh giá
 Giao diện người dùng đơn giản dể sử dụng, tìm kiếm nhanh chóng, chính xác tiết kiệm thời gian giúp hạn chế được việc phải lưu quá nhiều sổ sách trong quản lý. Tuy nhiên một số chức năng cần phải nâng cấp và tối ưu để đạt được kết qua thực thi tốt nhất cho các dự án công nghệ thông tin tiếp theo.
 
-=======
->>>>>>> 5c1d8a64d09661c662adb0a7d9d237abcedfa6c2
