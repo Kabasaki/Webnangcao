@@ -221,7 +221,4 @@ Ghi chú:
 Các chức năng hoạt động ổn định
 ## 2.Đánh giá
 Giao diện người dùng đơn giản dể sử dụng, tìm kiếm nhanh chóng, chính xác tiết kiệm thời gian giúp hạn chế được việc phải lưu quá nhiều sổ sách trong quản lý. Tuy nhiên một số chức năng cần phải nâng cấp và tối ưu để đạt được kết qua thực thi tốt nhất cho các dự án công nghệ thông tin tiếp theo.
-1.	Tài liệu của gv: Nguyễn Lệ Thu
-2.	Tài liệu chat GPT
-3.	W3 School
 
