@@ -54,29 +54,24 @@ graph TD;
 ## Deployment
 ### Cài đặt môi trường
 ```sh
-composer create-project laravel/laravel music-management
-cd music-management
+cd Musicweb-main
+composer install
+cp .env.example .env
 ```
 
 ### Tạo database
 ```sql
-CREATE DATABASE defaultdb;
+CREATE DATABASE music;
 ```
 
 ### Cấu hình `.env`
 ```env
-DB_CONNECTION=sqlite
+DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=C:/xampp/htdocs/Music/Musicweb-main/database/database.sqlite
+DB_DATABASE=music
 DB_USERNAME=root
 DB_PASSWORD=
-```
-
-### Cài đặt dependencies
-```sh
-composer require jeroennoten/laravel-adminlte
-composer require laravel/ui
 ```
 
 ### Chạy migrations
