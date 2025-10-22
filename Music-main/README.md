@@ -97,13 +97,13 @@ php artisan serve
 # PHẦN II: NỘI DUNG
 ## 1.Yêu cầu
 ### 1.1. Yêu Cầu Chính
-•	Xây dựng ứng dụng web bằng Laravel Framework.
-•	Nội dung quản lý: hệ thống nghe nhạc (quản lý người dùng, nghệ sĩ, bài hát, thể loại, danh sách phát).
-•	Thực hiện đầy đủ chức năng CRUD (Create, Read, Update, Delete) cho các đối tượng trong hệ thống.
+-	Xây dựng ứng dụng web bằng Laravel Framework.
+-	Nội dung quản lý: hệ thống nghe nhạc (quản lý người dùng, nghệ sĩ, bài hát, thể loại, danh sách phát).
+-	Thực hiện đầy đủ chức năng CRUD (Create, Read, Update, Delete) cho các đối tượng trong hệ thống.
 ### 1.2. Cải Thiện Giao Diện
-•	Sử dụng Grid có Filter và sắp xếp để tối ưu hiển thị dữ liệu.
-•	Áp dụng các thư viện JavaScript sẵn có như Bootstrap, DataTables để cải thiện giao diện.
-•	Thiết kế giao diện theo hướng chuyên nghiệp, trực quan và thân thiện với người dùng.
+-	Sử dụng Grid có Filter và sắp xếp để tối ưu hiển thị dữ liệu.
+-	Áp dụng các thư viện JavaScript sẵn có như Bootstrap, DataTables để cải thiện giao diện.
+-	Thiết kế giao diện theo hướng chuyên nghiệp, trực quan và thân thiện với người dùng.
 ## 2. Quy trình hoạt động và giao diện hệ thống
 ### 2.1 Quy trình đăng nhập
 • Thời gian: Thực hiện khi đăng nhập tài khoản
@@ -157,28 +157,29 @@ Sau khi nhập các trường thông tin hợp lệ và bấm lưu sẽ được
 -	Thông tin đối tượng khớp với từ khóa và bộ lọc sẽ được hiển thị
 
 ### 2.6 Update bài hát 
-   B1. Thêm nghệ sĩ vào Quản lý nghệ sĩ
-   B2. Thêm thể loại vào Quản lý thể loại
-   B3. Thêm bài hát vào Quản lý bài hát 
- 	-Thêm tên bài hát
- 	-Thêm thể loại
- 	-Thời lượng của bài hát 
- 	-Thêm five URL bài hát
+   B1.Thêm nghệ sĩ vào Quản lý nghệ sĩ  
+   B2.Thêm thể loại vào Quản lý thể loại  
+   B3.Thêm bài hát vào Quản lý bài hát  
+ 	-Thêm tên bài hát  
+ 	-Thêm thể loại  
+ 	-Thời lượng của bài hát  
+ 	-Thêm URL bài hát  
  
 
 
 # PHẦN III: SƠ ĐỒ THỰC HIỆN
 ## 1.Sơ đồ chức năng
 Yêu cầu chức năng:
- Quản lý người dùng: Đăng ký, đăng nhập, phân quyền, cập nhật thông tin, quản lý tài khoản.
-Quản lý bài hát: Thêm, sửa, xóa, xem danh sách, tìm kiếm theo tên, nghệ sĩ, thể loại.
-Quản lý nghệ sĩ: Thêm, sửa, xóa, xem danh sách, liên kết bài hát.
-Quản lý thể loại: Thêm, sửa, xóa, xem danh sách, liên kết bài hát.
-Quản lý danh sách phát: Tạo, sửa, xóa, thêm/xóa bài hát, xem danh sách phát cá nhân/công khai. 
+- Quản lý người dùng: Đăng ký, đăng nhập, phân quyền, cập nhật thông tin, quản lý tài khoản.
+- Quản lý bài hát: Thêm, sửa, xóa, xem danh sách, tìm kiếm theo tên, nghệ sĩ, thể loại.
+- Quản lý nghệ sĩ: Thêm, sửa, xóa, xem danh sách, liên kết bài hát.
+- Quản lý thể loại: Thêm, sửa, xóa, xem danh sách, liên kết bài hát.
+- Quản lý danh sách phát: Tạo, sửa, xóa, thêm/xóa bài hát, xem danh sách phát cá nhân/công khai.'
+  
 Yêu Cầu Phi Chức Năng:
-Dễ sử dụng: Giao diện trực quan, thiết kế hiện đại nhờ AdminLTE 3.x. 
-Hiệu suất cao: Sử dụng DataTables để xử lý và hiển thị dữ liệu lớn một cách mượt mà. 
-Bảo mật: Áp dụng các biện pháp xác thực và phân quyền tiêu chuẩn từ Laravel.
+- Dễ sử dụng: Giao diện trực quan, thiết kế hiện đại nhờ AdminLTE 3.x. 
+- Hiệu suất cao: Sử dụng DataTables để xử lý và hiển thị dữ liệu lớn một cách mượt mà. 
+- Bảo mật: Áp dụng các biện pháp xác thực và phân quyền tiêu chuẩn từ Laravel.
 
 ## 2.Sơ đồ quan hệ thực thể
 
@@ -208,9 +209,9 @@ GENRE (Thể loại)	id (int, PK)
 name (string) 
 description (text)	Quản lý thể loại nhạc, mỗi thể loại có nhiều bài hát.
 
-Ghi chú:
-•	PK (Primary Key): Khóa chính của bảng.
-•	FK (Foreign Key): Khóa ngoại liên kết với bảng khác.
+Ghi chú:  
+•	PK (Primary Key): Khóa chính của bảng.  
+•	FK (Foreign Key): Khóa ngoại liên kết với bảng khác.  
 
 # PHẦN IV: KIỂM THỬ VÀ ĐÁNH GIÁ
 ## 1.Kiểm thử
@@ -218,3 +219,7 @@ Các chức năng hoạt động ổn định
 ## 2.Đánh giá
 Giao diện người dùng đơn giản dể sử dụng, tìm kiếm nhanh chóng, chính xác tiết kiệm thời gian giúp hạn chế được việc phải lưu quá nhiều sổ sách trong quản lý. Tuy nhiên một số chức năng cần phải nâng cấp và tối ưu để đạt được kết qua thực thi tốt nhất cho các dự án công nghệ thông tin tiếp theo.
 
+# Tài liệu tham khảo
+- ChatGPT
+- W3schools
+- Giảng viên hướng dẫn: Nguyễn Thị Thùy Liên
