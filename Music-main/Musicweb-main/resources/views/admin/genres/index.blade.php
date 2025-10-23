@@ -22,6 +22,13 @@
     </div>
     @endif
 
+    @if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+    @endif
+
+
     <div class="card">
         <div class="card-header">
             <form action="{{ route('genres.index') }}" method="GET" id="searchForm">
@@ -125,7 +132,7 @@
 
         @if($genres instanceof \Illuminate\Pagination\LengthAwarePaginator)
         <div class="card-footer">
-            {{ $genres->links() }}
+            {{ $genres ->appends(request()->query())->links('pagination::bootstrap-4') }}
         </div>
         @endif
     </div>

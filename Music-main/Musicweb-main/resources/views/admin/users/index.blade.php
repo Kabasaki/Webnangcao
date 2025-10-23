@@ -145,6 +145,11 @@
                 @endforeach
             </tbody>
         </table>
+        @if($users instanceof \Illuminate\Pagination\LengthAwarePaginator)
+            <div class="card-footer">
+            {{ $users->appends(request()->query())->links('pagination::bootstrap-4') }}
+        </div>
+        @endif
     </div>
 </div>
 <style>

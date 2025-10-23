@@ -109,19 +109,22 @@ class GenreController extends Controller
     }
 
     public function store(Request $request)
-    {
-        $validated = $request->validate([
-            'name' => ['required', 'string', 'max:255', 'unique:genres'],
-            'description' => ['nullable', 'string'],
-        ]);
+{
+    $validated = $request->validate([
+        'name' => ['required', 'string', 'max:255', 'unique:genres,name'],
+        'description' => ['nullable', 'string'],
+    ]);
 
-        try {
-            Genre::create($validated);
-            return redirect()->route('genres.index')->with('success', 'Thể loại đã được thêm thành công!');
-        } catch (\Exception $e) {
-            return back()->with('error', 'Có lỗi xảy ra khi thêm thể loại!')->withInput();
-        }
+    try {
+        Genre::create($validated);
+        dd('redirect working');
+        return redirect()->route('genres.index')
+                         ->with('success', 'Thể loại đã được thêm thành công!');
+    } catch (\Exception $e) {
+        return back()->with('error', 'Có lỗi xảy ra khi thêm thể loại!')
+                     ->withInput();
     }
+}
 
     public function edit(Genre $genre)
     {

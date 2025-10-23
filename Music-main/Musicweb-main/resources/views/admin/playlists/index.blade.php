@@ -127,7 +127,7 @@
 
         @if($playlists instanceof \Illuminate\Pagination\LengthAwarePaginator)
         <div class="card-footer">
-            {{ $playlists->links() }}
+            {{ $playlists->appends(request()->query())->links('pagination::bootstrap-4') }}
         </div>
         @endif
     </div>
@@ -141,13 +141,14 @@
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('resetSearch').addEventListener('click', function(e) {
+        document.getElementById('resetSearch').addEventListener('click', function(e) {  
             e.preventDefault();
             document.querySelector('input[name="keyword"]').value = '';
             document.querySelector('select[name="search_by"]').value = 'all';
             document.querySelector('select[name="per_page"]').value = '10';
             document.querySelector('select[name="sort_by"]').value = 'id_desc';
             document.getElementById('searchForm').submit();
+            
         });
 
         document.querySelector('select[name="sort_by"]').addEventListener('change', function() {

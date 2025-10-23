@@ -125,6 +125,11 @@
                     @endforelse
                 </tbody>
             </table>
+            @if($artists instanceof \Illuminate\Pagination\LengthAwarePaginator)
+            <div class="card-footer">
+            {{ $artists->appends(request()->query())->links('pagination::bootstrap-4') }}
+        </div>
+        @endif
         </div>
     </div>
 </div>

@@ -131,6 +131,11 @@
                 @endforeach
             </tbody>
         </table>
+        @if($songs instanceof \Illuminate\Pagination\LengthAwarePaginator)
+        <div class="card-footer">
+            {{ $songs ->appends(request()->query())->links('pagination::bootstrap-4') }}
+        </div>
+        @endif
     </div>
 </div>
 
