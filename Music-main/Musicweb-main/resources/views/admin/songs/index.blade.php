@@ -7,9 +7,17 @@
             <h1 class="mb-0">Quản lý Bài Hát</h1>
         </div>
         <div class="col-md-6 text-right">
+
+
+
+            @if(auth()->check() && auth()->user()->role === 'admin' || auth()->user()->role === 'artist')
+        
             <a href="{{ route('songs.create') }}" class="btn btn-primary">
                 <i class="fas fa-plus"></i> Thêm Bài Hát
             </a>
+        
+
+        @endif
         </div>
     </div>
 
