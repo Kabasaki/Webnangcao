@@ -106,12 +106,11 @@ php artisan serve
 -	Thiết kế giao diện theo hướng chuyên nghiệp, trực quan và thân thiện với người dùng.
 ## 2. Quy trình hoạt động và giao diện hệ thống
 ### 2.1 Quy trình đăng nhập
-• Thời gian: Thực hiện khi đăng nhập tài khoản
- 
-Giao diện đăng nhập
-• Vai trò: Bảo mật thông tin
+• Thời gian: Thực hiện khi đăng nhập tài khoản  
+Giao diện đăng nhập  
+• Vai trò: Bảo mật thông tin  
 • Quy trình:
--	Người quản lí đăng nhập đúng tài khoản, mật khẩu, và có role = ‘admin’ (vd: tài khoản: admin@example.com, mật khẩu: password ) sẽ mở giao diện quản lí, ngoài ra nếu role = ‘artist’ thì sẽ có quyền upload bài hát, nếu role = ‘user’ sẽ điều hướng về giao diện trang web nghe nhạc ( chưa phát triển )
+-	Người quản lí đăng nhập đúng tài khoản, mật khẩu, và có role = ‘admin’ (vd: tài khoản: admin@example.com, mật khẩu: 12345678 ) sẽ mở giao diện quản lí, ngoài ra nếu role = ‘artist’ thì sẽ có quyền upload bài hát, nếu role = ‘user’ sẽ điều hướng về giao diện trang web nghe nhạc ( chưa phát triển )
  
 Giao diện quản lý( dashboard )
 *Bên cạnh đó trang web còn cho phép:
@@ -122,8 +121,8 @@ Sau khi nhập các thông tin hợp lệ hệ thống sẽ lưu trữ tài kho�
  
 Điền thông tin email đã dùng để đăng ký tài khoản để nhận mã và đặt lại mật khẩu.
 ### 2.2 Quy trình thêm thông tin
-• Thời gian: Thực hiện khi muốn thêm đối tượng mới( người dùng, bài hát, thể loại, danh sách phát, nghệ sĩ)
-• Vai trò: Thêm đối tượng mới và cập nhật dữ liệu lên bảng khi thực hiện thành công.
+• Thời gian: Thực hiện khi muốn thêm đối tượng mới( người dùng, bài hát, thể loại, danh sách phát, nghệ sĩ)  
+• Vai trò: Thêm đối tượng mới và cập nhật dữ liệu lên bảng khi thực hiện thành công.  
 • Quy trình:
 -	Khi bấm nút thêm sẽ chuyển đến trang create( mỗi model là 1 trang create riêng)
 -	Người quản lí nhập thông tin vào các mục có sẵn
@@ -135,8 +134,8 @@ Sau khi nhập các thông tin hợp lệ hệ thống sẽ lưu trữ tài kho�
 Sau khi nhập các trường thông tin hợp lệ và bấm lưu sẽ được điều hướng về lại trang quản lý với thông báo thành công
  
 ### 2.3 Quy trình sửa thông tin
-• Thời gian: Thực hiện khi muốn cập nhật thông tin đối tượng( người dùng, bài hát, thể loại, danh sách phát, nghệ sĩ)
-• Vai trò: Cập nhật, chỉnh sửa dữ liệu lên bảng khi thực hiện thành công.
+• Thời gian: Thực hiện khi muốn cập nhật thông tin đối tượng( người dùng, bài hát, thể loại, danh sách phát, nghệ sĩ)  
+• Vai trò: Cập nhật, chỉnh sửa dữ liệu lên bảng khi thực hiện thành công.  
 • Quy trình:
 -	Khi bấm nút sửa sẽ chuyển đến trang edit( mỗi model là 1 trang edit riêng)
 -	Người quản lí thực hiện chỉnh sửa thông tin
@@ -144,14 +143,14 @@ Sau khi nhập các trường thông tin hợp lệ và bấm lưu sẽ được
 -	Ngoài ra chương trình sẽ kiểm tra thông tin được nhập vào nếu không đúng định dạng sẽ báo lỗi
  
 ### 2.4 Quy trình xóa đối tượng
-• Vai trò: Xóa đối tượng đã có trong danh sách
+• Vai trò: Xóa đối tượng đã có trong danh sách  
 • Quy trình:
 -	Chọn đối tượng cần xóa
 -	Chọn “Xóa”, ấn “Ok” để xóa, “Hủy” để hủy
  
  
 ### 2.5 Quy trình tìm kiếm đối tượng
-• Vai trò: Tìm kiếm đối tượng đã có trong danh sách dựa trên từ khóa hoặc các trường thông tin
+• Vai trò: Tìm kiếm đối tượng đã có trong danh sách dựa trên từ khóa hoặc các trường thông tin  
 • Quy trình:
 -	Nhập từ khóa tìm kiếm (hoặc không), chọn các bộ lọc nếu cần thiết và thực hiện tìm kiếm
 -	Thông tin đối tượng khớp với từ khóa và bộ lọc sẽ được hiển thị
