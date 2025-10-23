@@ -105,12 +105,18 @@
                         <a href="{{ route('genres.show', $genre->id) }}" class="btn btn-info btn-sm">
                             <i class="fas fa-eye"></i> Xem
                         </a>
+
+                        @if(auth()->check() && auth()->user()->role === 'admin')
+
                         <a href="{{ route('genres.edit', $genre->id) }}" class="btn btn-warning btn-sm">Sửa</a>
                         <form action="{{ route('genres.destroy', $genre->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button type="button" class="btn btn-danger btn-sm" onclick="confirmDelete(this)">Xóa</button>
                         </form>
+
+                        @endif
+
                     </td>
                 </tr>
                 @endforeach

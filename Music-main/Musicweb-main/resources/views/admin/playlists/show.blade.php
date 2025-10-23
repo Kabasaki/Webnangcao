@@ -44,6 +44,8 @@
                 </tr>
             </table>
 
+            @if(auth()->check() && auth()->user()->role === 'admin')
+
             <div class="mt-3">
                 <a href="{{ route('playlists.edit', $playlist->id) }}" class="btn btn-warning">
                     <i class="fas fa-edit"></i> Sửa
@@ -55,6 +57,9 @@
                         <i class="fas fa-trash"></i> Xóa
                     </button>
                 </form>
+
+                @endif
+
             </div>
         </div>
     </div>

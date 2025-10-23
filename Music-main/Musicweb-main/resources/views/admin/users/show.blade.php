@@ -62,7 +62,12 @@
                     </table>
 
                     <div class="mt-3">
+                         @if(auth()->check() && auth()->user()->role === 'admin')
+
+
                         <a href="{{ route('users.edit', $user->id) }}" class="btn btn-warning">
+
+                       
                             <i class="fas fa-edit"></i> Sửa
                         </a>
                         <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display:inline;">
@@ -72,6 +77,9 @@
                                 <i class="fas fa-trash"></i> Xóa
                             </button>
                         </form>
+
+                        @endif
+
                     </div>
                 </div>
             </div>

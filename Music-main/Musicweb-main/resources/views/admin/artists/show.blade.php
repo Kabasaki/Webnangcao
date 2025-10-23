@@ -14,6 +14,9 @@
                 <i class="fas fa-arrow-left"></i> Quay lại
             </a>
         </div>
+
+        @if(auth()->check() && auth()->user()->role === 'admin')
+
         <div class="col-md-6 text-right">
             <a href="{{ route('artists.edit', $artist->id) }}" class="btn btn-warning">
                 <i class="fas fa-edit"></i> Sửa
@@ -25,6 +28,9 @@
                     <i class="fas fa-trash"></i> Xóa
                 </button>
             </form>
+
+        @endif
+
         </div>
     </div>
 

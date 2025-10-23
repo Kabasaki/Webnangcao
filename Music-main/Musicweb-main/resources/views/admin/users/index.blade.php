@@ -6,11 +6,17 @@
         <div class="col-md-6">
             <h1>Quản lý Người Dùng</h1>
         </div>
+
+        @if(auth()->check() && auth()->user()->role === 'admin')
+
         <div class="col-md-6 text-right">
             <a href="{{ route('users.create') }}" class="btn btn-primary">
                 <i class="fas fa-plus"></i> Thêm Người Dùng
             </a>
         </div>
+
+        @endif
+
     </div>
 
     @if (session('success'))
@@ -117,7 +123,10 @@
                         <a href="{{ route('users.show', $user->id) }}" class="btn btn-info btn-sm">
                             <i class="fas fa-eye"></i> Xem
                         </a>
+
+                        @if(auth()->check() && auth()->user()->role === 'admin')
                         <a href="{{ route('users.edit', $user->id) }}" class="btn btn-warning btn-sm">
+                        
                             <i class="fas fa-edit"></i> Sửa
                         </a>
                         <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display:inline;">
@@ -127,6 +136,9 @@
                                 <i class="fas fa-trash"></i> Xóa
                             </button>
                         </form>
+
+                        @endif
+                        
                     </td>
 
                 </tr>

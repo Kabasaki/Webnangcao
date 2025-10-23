@@ -107,12 +107,18 @@
                         <a href="{{ route('playlists.show', $playlist->id) }}" class="btn btn-info btn-sm">
                             <i class="fas fa-eye"></i> Xem
                         </a>
+
+                        @if(auth()->check() && auth()->user()->role === 'admin')
+
                         <a href="{{ route('playlists.edit', $playlist->id) }}" class="btn btn-warning btn-sm">Sửa</a>
                         <form action="{{ route('playlists.destroy', $playlist->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button type="button" class="btn btn-danger btn-sm" onclick="confirmDelete(this)">Xóa</button>
                         </form>
+
+                        @endif
+
                     </td>
                 </tr>
                 @endforeach
